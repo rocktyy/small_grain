@@ -8,4 +8,9 @@ https://github.com/jation/CanvasGrain
 
 会一步一步优化，现在主要思路来自 --jation  
 
+观看地址二维码：
+
+
+
+
 0.0.1 版本 实现移动端的适配问题
