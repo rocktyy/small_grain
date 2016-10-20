@@ -11,8 +11,8 @@ https://github.com/jation/CanvasGrain
 观看地址：https://rocktyy.github.io/example/demo/grain_life
 
 二维码：
-
-![](https://rocktyy.github.io/example/demo/grain_life/img/code.png)
+ 
+![image](https://rocktyy.github.io/example/demo/grain_life/img/code.png)
 
 0.0.1 版本 实现移动端的适配问题
 
