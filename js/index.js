@@ -37,10 +37,8 @@ define(function (require, exports, module) {
         }); 
         canvas.addEventListener('touchstart', function (e) { 
                 var ctx = canvas.getContext("2d"); 
-                ctx.fillText('World', 300,300); 
-                ctx.font = "30px Courier New"; 
                 ctx.fillStyle = "#ffffff"; 
-                ctx.fillText("CodePlayer+中文测试", 50, 50);
+                ctx.fillText('CodePlayer+中文测试', 300,300);   
 
                 launcher =  world.createLauncher({
                     id: Util.randomString("", 8),
