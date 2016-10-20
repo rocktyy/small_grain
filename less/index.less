@@ -1,0 +1,43 @@
+/***初始化***/  
+@import 'flexible.less';   
+
+@bgcolor:#f5f5f5; //主题背景颜色  
+@general:#3a3a3a;
+html,body{ 
+    width:100%;  
+    height:100%;  
+    background:@bgcolor;
+    color: @general;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/*函数列表*/   
+.img_content(@width,@height,@url){ 
+    .px2rem(width,@width);  
+    .px2rem(height,@height);  
+    background-image:@url;
+    background-repeat: no-repeat;
+    background-size: 100% 100%  
+}    
+/*函数列表 end*/
+
+/* 页面初始化加载 loadding */
+.loadding{
+    .px2rem(width,750);  
+    height:100%;  
+    margin: 0 auto;
+    .loadding-img{
+        margin: 0 auto;
+        .px2rem(margin-top,400); 
+        .img_content(50,50,url(../../img/loadding.gif)); 
+    }
+}
+
+/* canvas 画布 */ 
+.grain {     
+    .px2rem(width,750);  
+    height:100%;   
+    margin:0 auto; 
+    display: inline-block
+}  
