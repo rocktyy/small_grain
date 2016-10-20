@@ -1,6 +1,4 @@
-define(function(require, exports, module) {
-
+define(function(require, exports, module) { 
     //exports.doSth =function(){};
-    //module.exports = Point;
-
+    //module.exports = Point; 
 });

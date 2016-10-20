@@ -8,6 +8,7 @@ body {
   color: #3a3a3a;
   -webkit-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
 /*函数列表*/
 /*函数列表 end*/
@@ -26,10 +27,12 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-/* canvas 画布 */
 .grain {
   width: 10rem;
   height: 100%;
   margin: 0 auto;
+  /* canvas 画布 */
+}
+.grain canvas {
   display: inline-block;
 }

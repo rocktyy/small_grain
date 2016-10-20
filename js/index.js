@@ -2,15 +2,13 @@ define(function (require, exports, module) {
     var Util = require('./mod/Util');
     var World = require('./mod/World');
     var ImgLoader = require('./mod/ImgLoad.js');
-    var launcher; 
-
+    var launcher;  
     var arrPreLoadImg = ['./img/night.jpg', './img/lizi.png'];
     ImgLoader(arrPreLoadImg, function (o) { 
         if (o == 1) {
             sourcesLoaded();
         }
-    });
-
+    }); 
     function sourcesLoaded() {
         var imgBackground = new Image(),
             imgLizi = new Image();
@@ -18,8 +16,8 @@ define(function (require, exports, module) {
         imgLizi.src = './img/lizi2.png';
 
         var canvas = document.getElementById('stage'); 
-        canvas.width = $(window).width();
-        canvas.height = $(window).height();
+        canvas.width  =  $('.grain').css('width').replace('px','');
+        canvas.height =  $('.grain').css('height').replace('px',''); 
 
         var world = new World({
             backgroundImage: imgBackground,
@@ -29,17 +27,21 @@ define(function (require, exports, module) {
             minHeat: 0.91,
             maxHeat: 0.01,
             gravity: 1
-        });  
-
+        });   
         canvas.addEventListener('touchend', function (e) {
             e.preventDefault();
             var length = world.launchers.length;
             if(length > 0){ 
                 world.clearLauncher();
             } 
-        });
-
+        }); 
         canvas.addEventListener('touchstart', function (e) { 
+                var ctx = canvas.getContext("2d"); 
+                ctx.fillText('World', 300,300); 
+                ctx.font = "30px Courier New"; 
+                ctx.fillStyle = "#ffffff"; 
+                ctx.fillText("CodePlayer+中文测试", 50, 50);
+
                 launcher =  world.createLauncher({
                     id: Util.randomString("", 8),
                     world: world,
@@ -68,17 +70,12 @@ define(function (require, exports, module) {
                     "grainLife": 2.5,
                     "grainLifeRange": 1.5
             }); 
-        }, false);
-
-
+        }, false); 
         setInterval(function () {
             world.timeTick();
             if(launcher){
                 launcher.status = false;
             }
         }, 60);
-    }
-
-
-
+    }  
 });

@@ -1,7 +1,6 @@
 define(function (require, exports, module) {
     var Util = require('./Util');
-    var Grain = require('./Grain');
-
+    var Grain = require('./Grain'); 
     /**
      * 发射器构造函数
      * @param config
@@ -183,9 +182,6 @@ define(function (require, exports, module) {
         for (var i = 0; i < this.grainList.length; i++) {
             this.grainList[i].paint();
         }
-    };
-
-
-    module.exports = Launcher;
-
+    }; 
+    module.exports = Launcher; 
 });
