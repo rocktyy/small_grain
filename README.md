@@ -10,7 +10,6 @@ https://github.com/jation/CanvasGrain
 
 观看地址二维码：
 
-
-
+![](img_url)
 
 0.0.1 版本 实现移动端的适配问题
