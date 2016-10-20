@@ -8,7 +8,9 @@ https://github.com/jation/CanvasGrain
 
 会一步一步优化，现在主要思路来自 --jation  
 
-观看地址二维码：
+观看地址：https://rocktyy.github.io/example/demo/grain_life
+
+二维码：
 
 ![](https://rocktyy.github.io/example/demo/grain_life/img/code.png)
 
