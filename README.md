@@ -15,3 +15,7 @@ https://github.com/jation/CanvasGrain
 ![](https://rocktyy.github.io/example/demo/grain_life/img/code.png)
 
 0.0.1 版本 实现移动端的适配问题
+
+
+MIT协议
+
