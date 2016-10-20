@@ -12,21 +12,6 @@ body {
 }
 /*函数列表*/
 /*函数列表 end*/
-/* 页面初始化加载 loadding */
-.loadding {
-  width: 10rem;
-  height: 100%;
-  margin: 0 auto;
-}
-.loadding .loadding-img {
-  margin: 0 auto;
-  margin-top: 5.33333333rem;
-  width: 0.66666667rem;
-  height: 0.66666667rem;
-  background-image: url(../../img/loadding.gif);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 .grain {
   width: 10rem;
   height: 100%;

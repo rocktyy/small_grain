@@ -71,6 +71,7 @@ define(function (require, exports, module) {
                     "grainLifeRange": 1.5
             }); 
         }, false); 
+        //世界刷新的频率
         setInterval(function () {
             world.timeTick();
             if(launcher){
